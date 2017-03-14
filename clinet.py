@@ -11,7 +11,7 @@ import socket
 import time
 
 Host = '127.0.0.1' # Enter ur IP ADRESS
-Port = 6669
+Port = 8888
 adrs = (Host, Port)
 Buff = 64790
 error = "Error Socket"
